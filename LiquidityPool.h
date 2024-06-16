@@ -16,6 +16,13 @@ public:
     double getDai() const;
     double getEth() const;
     double getTotalLiquidityTokens() const;
+
+    void addDai(double amount);
+    void addEth(double amount);
+    void removeDai(double amount);
+    void removeEth(double amount);
+    void addLiquidityTokens(double amount);
+    void removeLiquidityTokens(double amount);
 };
 
 #endif
