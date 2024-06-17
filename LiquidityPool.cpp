@@ -28,41 +28,47 @@ double LiquidityPool::getTotalLiquidityTokens() const {
     	return totalLiquidityTokens;
 
 
-void LiquidityPool::addDai(double amount) {
-    	if (amount <= 0) throw std::invalid_argument("Amount should be a positive number."); 
+bool LiquidityPool::addDai(double amount) {
+    	if (amount <= 0) return false;
     	std::lock_guard<std::mutex> lock(pool_mutex);
     	dai += amount;
+	return true;
 }
 
-void LiquidityPool::addEth(double amount) {
-     	if (amount <= 0) throw std::invalid_argument("Amount should be a positive number."); 
-    	std::lock_guard<std::mutex> lock(pool_mutex);
+bool LiquidityPool::addEth(double amount) {
+     	if (amount <= 0) return false;
+	std::lock_guard<std::mutex> lock(pool_mutex);
     	eth += amount;
+	return true;
 }
 
-void LiquidityPool::removeDai(double amount) {
-     	if (amount <= 0) throw std::invalid_argument("Amount should be a positive number."); 
+bool LiquidityPool::removeDai(double amount) {
+     	if (amount <= 0) return false;
 	std::lock_guard<std::mutex> lock(pool_mutex);
-    	if (amount > dai) throw std::runtime_error("Not enough DAI available.");
+    	if (amount > dai) return false;
     	dai -= amount;
+	return true;
 }
 
-void LiquidityPool::removeEth(double amount) {
-     	if (amount <= 0) throw std::invalid_argument("Amount should be a positive number."); 
+bool LiquidityPool::removeEth(double amount) {
+     	if (amount <= 0) return false;
 	std::lock_guard<std::mutex> lock(pool_mutex);
-    	if (amount > eth) throw std::runtime_error("Not enough ETH available.");
+    	if (amount > eth) return false;
     	eth -= amount;
+	return true;
 }
 
-void LiquidityPool::addLiquidityTokens(double amount) {
-      	if (amount <= 0) throw std::invalid_argument("Amount should be a positive number."); 
+bool LiquidityPool::addLiquidityTokens(double amount) {
+      	if (amount <= 0) return false;
 	std::lock_guard<std::mutex> lock(pool_mutex);
     	totalLiquidityTokens += amount;
+	return true;
 }
 
 void LiquidityPool::removeLiquidityTokens(double amount) {
-     	if (amount <= 0) throw std::invalid_argument("Amount should be a positive number."); 
+     	if (amount <= 0) return false;
 	std::lock_guard<std::mutex> lock(pool_mutex);
-    	if (amount > totalLiquidityTokens) throw std::runtime_error("Not enough liquidity tokens available.");
-    	totalLiquidity0Tokens -= amount;
+    	if (amount > totalLiquidityTokens) return false;
+    	totalLiquidityTokens -= amount;
+	return true;
 }

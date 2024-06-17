@@ -17,12 +17,20 @@ public:
     double getEth() const;
     double getTotalLiquidityTokens() const;
 
-    void addDai(double amount);
-    void addEth(double amount);
-    void removeDai(double amount);
-    void removeEth(double amount);
-    void addLiquidityTokens(double amount);
-    void removeLiquidityTokens(double amount);
+    bool addDai(double amount);
+    bool addEth(double amount);
+    bool removeDai(double amount);
+    bool removeEth(double amount);
+    bool addLiquidityTokens(double amount);
+    bool removeLiquidityTokens(double amount);
+
+
+    virtual bool addLiquidity(double daiAmount, double ethAmount) = 0;
+    virtual bool removeLiquidity(double tokens) = 0;
+    virtual double swapDaiToEth(double daiAmount) = 0;
+    virtual double swapEthToDai(double ethAmount) = 0;
+
+    virtual ~LiquidityPool() {}
 };
 
 #endif
