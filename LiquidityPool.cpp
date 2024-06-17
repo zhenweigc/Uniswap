@@ -1,6 +1,5 @@
 #include "LiquidPool.h"
 
-#include <cmath>
 #include <stdexcept>
 
 LiquidityPool::LiquidityPool(double initialDai, double initialEth) {
@@ -9,8 +8,8 @@ LiquidityPool::LiquidityPool(double initialDai, double initialEth) {
 	}
     	dai = initialDai;
     	eth = initialEth;
-    	totalLiquidityTokens = sqrt(dai * eth);
 }
+
 
 double LiquidityPool::getDai() const {
     	return dai;
@@ -20,8 +19,8 @@ double LiquidityPool::getEth() const {
     	return eth;
 }
 
-double LiquidityPool::getTotalLiquidityTokens() const {
-    	return totalLiquidityTokens;
+double LiquidityPool::getK() const {
+	return getEth() * getDai();
 }
 
 void LiquidityPool::addDai(double amount) {
@@ -32,18 +31,18 @@ void LiquidityPool::addEth(double amount) {
     	eth += amount;
 }
 
+void LiquidityPool::setDai(double amount) {
+    	dai = amount;
+}
+
+void LiquidityPool::setEth(double amount) {
+    	eth = amount;
+}
+
 void LiquidityPool::removeDai(double amount) {
-    	dai -= amount;
+	dai -= amount;
 }
 
 void LiquidityPool::removeEth(double amount) {
-    	eth -= amount;
-}
-
-void LiquidityPool::addLiquidityTokens(double amount) {
-    	totalLiquidityTokens += amount;
-}
-
-void LiquidityPool::removeLiquidityTokens(double amount) {
-    	totalLiquidityTokens -= amount;
+	eth -= amount;
 }
