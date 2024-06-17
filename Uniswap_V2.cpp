@@ -82,3 +82,7 @@ double Uniswap_V2::getSwapFee() const {
 	std::lock_guard<std::mutex> lock(pool_mutex);
 	return swapFee;
 }
+
+std::mutex& Uniswap_V2::getMutex() {
+    return pool_mutex;
+}

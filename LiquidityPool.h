@@ -23,6 +23,7 @@ public:
     virtual double swapDaiToEth(double daiAmount) = 0;
     virtual double swapEthToDai(double ethAmount) = 0;
 
+    virtual std::mutex& getMutex() = 0;
     virtual ~LiquidityPool() {}
 };
 

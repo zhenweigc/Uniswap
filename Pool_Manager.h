@@ -15,23 +15,23 @@
  */
 class Pool_Manager {
 private:
-    std::unordered_map<uint64_t, std::shared_ptr<LiquidityPool>> pools;
-    std::stack<uint64_t> reusableIds; // Stack to store reusable IDs
-    static std::unique_ptr<Pool_Manager> instance;
-    static std::mutex mutex;
-    uint64_t nextPoolId = 0;
+	std::unordered_map<uint64_t, std::shared_ptr<LiquidityPool>> pools;
+    	std::stack<uint64_t> reusableIds; // Stack to store reusable IDs
+    	static std::unique_ptr<Pool_Manager> instance;
+    	static std::mutex mutex;
+    	uint64_t nextPoolId = 0;
 
-    Pool_Manager() = default;
+    	Pool_Manager() = default;
 
 public:
-    static Pool_Manager* getInstance();
+    	static Pool_Manager* getInstance();
 
-    uint64_t addPool(std::shared_ptr<LiquidityPool> pool);
-    std::shared_ptr<LiquidityPool> getPool(uint64_t id);
-    void removePool(uint64_t id);
+    	uint64_t addPool(std::shared_ptr<LiquidityPool> pool);
+    	std::weak_ptr<LiquidityPool> getPool(uint64_t id);
+    	std::shared_ptr<LiquidityPool> removePool(uint64_t id);
 
-    Pool_Manager(const Pool_Manager&) = delete;
-    Pool_Manager& operator=(const Pool_Manager&) = delete;
+    	Pool_Manager(const Pool_Manager&) = delete;
+    	Pool_Manager& operator=(const Pool_Manager&) = delete;
 };
 
 #endif
