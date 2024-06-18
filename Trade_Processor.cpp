@@ -85,7 +85,7 @@ void Trade_Processor::processFile(const std::string& filepath) {
 
             		auto newPool = std::make_shared<Uniswap_V2>(amount1, amount2);
             		uint64_t poolId = poolManager->addPool(newPool);
-            		log("Added new pool with ID: " + std::to_string(poolId));
+			log("Added pool with ID: " + std::to_string(poolId) + ", Initial DAI: " + std::to_string(amount1) + ", Initial ETH: " + std::to_string(amount2));
 			
         	} else if (action == "removePool") {
             		
