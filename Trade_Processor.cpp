@@ -64,6 +64,7 @@ void Trade_Processor::processFile(const std::string& filepath) {
 		 * [Pool ID] [calculateArbitrage] [Pool ID 2]
 		 * [Pool ID] [removePool]
 		 * [Pool ID] [addPool] [amount 1] [amount 2] (Pool ID input does not affect what Pool ID it is assigned to)
+		 * [Pool ID] [sleep] [msec] (Pool Id is useless here, this action lets the thread to sleep for given msec.)
 		 */
         	if (tokens.size() < 2) {
             		log("Malformed line: " + line);
@@ -135,6 +136,13 @@ void Trade_Processor::processFile(const std::string& filepath) {
             		} else {
 				log("Failed to remove pool " + std::to_string(poolId) + ": Pool not found.");
             		}
+		
+		} else if (action == "sleep") {
+			
+			double amount1 = std::stod(tokens[2]);
+			int sleepDuration = static_cast<int>(amount1);
+            		log("Sleeping for " + std::to_string(sleepDuration) + " milliseconds.");
+            		std::this_thread::sleep_for(std::chrono::milliseconds(sleepDuration));
 
 		} else {
             
