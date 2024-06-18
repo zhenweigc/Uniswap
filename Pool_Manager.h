@@ -6,6 +6,7 @@
 #include <mutex>
 #include <stack>
 #include <limits>
+#include <cstdint>
 
 #include "LiquidityPool.h"
 

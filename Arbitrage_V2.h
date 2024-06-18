@@ -13,9 +13,13 @@ public:
 private:
 	std::tuple<double, double> calculateArbitrage2Pools(
 			const std::weak_ptr<LiquidityPool>& poolA, 
-			const std::weak_ptr<LiquidityPool>& poolB) const override;i
+			const std::weak_ptr<LiquidityPool>& poolB) const override;
 
 	double calculateOptimalAmountIn(
 			double x_a, double y_a, double x_b, double y_b, double fee) const;
+
+	double calculateProfit(
+			double x_a, double y_a, double x_b, double y_b, double fee, double amountIn) const;
+
 };
 #endif

@@ -2,7 +2,10 @@
 #include "Pool_Manager.h"
 
 #include <cmath>
-
+/**
+ * Takes pointers to two pools
+ * return optimal value of Eth and Profit(earned Eth)
+ */
 std::tuple<double, double> Arbitrage_V2::calculateArbitrage2Pools(
     const std::weak_ptr<LiquidityPool>& poolA, 
     const std::weak_ptr<LiquidityPool>& poolB) const {
@@ -26,10 +29,28 @@ std::tuple<double, double> Arbitrage_V2::calculateArbitrage2Pools(
 	if (priceA > priceB) {
 		// ETH worth less in Pool A relative to DAI comparing to that of pool B
 		// We should use ETH to exchange for DAI in Pool B, then use that DAI to change back to ETH
+		double optimal_val;
+		x_a = poolB->getDai();
+		y_a = poolB->getEth();
+		x_b = poolA->getDai();
+		y_b = poolA->getEth();
 
-		return profit;		
+		optimal_val = calculateOptimalAmountIn(x_a, y_a, x_b, y_b, fee);
+		double profit = calculateProfit(x_a, y_a, x_b, y_b, fee, optimal_val);
+
+		return std::make_tuple(optimal_val, profit);
 	} else {
-		return profit;
+		
+		double optimal_val;
+		x_a = poolA->getDai();
+		y_a = poolA->getEth();
+		x_b = poolB->getDai();
+		y_b = poolB->getEth();
+
+		optimal_val = calculateOptimalAmountIn(x_a, y_a, x_b, y_b, fee);
+		double profit = calculateProfit(x_a, y_a, x_b, y_b, fee, optimal_val);
+
+		return std::make_tuple(optimal_val, profit);
 	}
 }
 
@@ -44,6 +65,7 @@ std::tuple<double, double> Arbitrage_V2::calculateArbitrage2Pools(
  */
 double Arbitrage_V2::calculateOptimalAmountIn(
 	double x_a, double y_a, double x_b, double y_b, double fee) const {
+	
 	double k = (1 - fee) * x_b + std::pow((1 - fee), 2.0) * x_a;
 	double a = std::pow(k, 2.0);
 	double b = 2 * k * y_a * x_b;
@@ -55,6 +77,18 @@ double Arbitrage_V2::calculateOptimalAmountIn(
     	}
 
     	return (-b + std::sqrt(discriminant)) / (2 * a);
+}
+
+/**
+ * Compute Eth earned in the arbitrage attempt
+ */
+double Arbitrage_V2::calculateProfit(
+		double x_a, double y_a, double x_b, double y_b, double fee, double amountIn) const {
+
+	double DaiOut = (1 - fee) * amountIn * y_a / ((1 - fee) * amountIn + x_a);
+	double EthOut = (1 - fee) * Daiout * y_b / ((1 - fee) * Daiout + x_b);
+ 
+	return (EthOut - amountIn);
 }
 
 std::tuple<double, double> Arbitrage_V2::calculateArbitrage2Pools(
