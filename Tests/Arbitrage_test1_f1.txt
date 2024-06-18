@@ -1,0 +1,3 @@
+addPool 400 1200
+Sleep 100
+calculateArbitrage 0 1
