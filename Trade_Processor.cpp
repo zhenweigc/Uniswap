@@ -59,11 +59,13 @@ void Trade_Processor::processFile(const std::string& filepath) {
         	}
 
 		/**
-		 * Each line should either have three or four tokens
+		 * Each line should either have two, three or four tokens
 		 * [Pool ID] [Action] [Amount 1] [Amount 2]
 		 * [Pool ID] [calculateArbitrage] [Pool ID 2]
+		 * [Pool ID] [removePool]
+		 * [Pool ID] [addPool] [amount 1] [amount 2] (Pool ID input does not affect what Pool ID it is assigned to)
 		 */
-        	if (tokens.size() < 3) {
+        	if (tokens.size() < 2) {
             		log("Malformed line: " + line);
             		continue;
         	}
@@ -117,6 +119,23 @@ void Trade_Processor::processFile(const std::string& filepath) {
             		auto result = arbitrage.calculateArbitrage2Pools(poolId, poolId2);
             		log("Arbitrage: Optimal ETH: " + std::to_string(std::get<0>(result)) + ", Profit: " + std::to_string(std::get<1>(result)));
         	
+		} else if (action == "addPool") {
+
+			double amount1 = std::stod(tokens[2]);
+            		double amount2 = std::stod(tokens[3]);
+	     		auto newPool = std::make_shared<Uniswap_V2>(amount1, amount2);
+			poolId = poolManager->addPool(newPool);
+			log("Added pool " + std::to_string(poolId) + " with " + std::to_string(amount1) + " DAI and " + std::to_string(amount2) + " ETH.");
+	
+		} else if (action == "removePool") {
+			
+			auto removedPool = poolManager->removePool(poolId);
+            		if (removedPool) {
+				log("Removed pool " + std::to_string(poolId));
+            		} else {
+				log("Failed to remove pool " + std::to_string(poolId) + ": Pool not found.");
+            		}
+
 		} else {
             
 			log("Unknown action: " + action);
