@@ -7,12 +7,15 @@
 
 class Arbitrage_V2 : public Arbitrage {
 public:
-	double calculateArbitrage2Pools(uint64_t poolAId, uint64_t poolBId) const;
+	std::tuple<double, double> calculateArbitrage2Pools(uint64_t poolAId, uint64_t poolBId) const;
 };
 
 private:
-	double calculateArbitrage2Pools(
+	std::tuple<double, double> calculateArbitrage2Pools(
 			const std::weak_ptr<LiquidityPool>& poolA, 
-			const std::weak_ptr<LiquidityPool>& poolB) const override;
+			const std::weak_ptr<LiquidityPool>& poolB) const override;i
+
+	double calculateOptimalAmountIn(
+			double x_a, double y_a, double x_b, double y_b, double fee) const;
 };
 #endif
