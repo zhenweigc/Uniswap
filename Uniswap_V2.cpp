@@ -27,7 +27,7 @@ bool Uniswap_V2::removeLiquidity(double daiAmount, double ethAmount) {
 
 /**
  * Different documents has different way of doing the fee calculation
- * Here we will substract the fee from input Amount first, then compute how much will be given to the trader
+ * Here we will substract the fee from input Amount first, then compute how much will be given to the trader.
  */
 double Uniswap_V2::swapDaiToEth(double daiAmount) {
 	if (daiAmount <= 0) return 0.0;
@@ -73,7 +73,7 @@ void Uniswap_V2::setSwapFee(double fee) {
 	    throw std::invalid_argument("Swap fee must be non-negative.");
     	}
     	if (fee >= 1) {
-	    throw std:invalid_argument("Swap fee must be less than 100%.");
+	    throw std::invalid_argument("Swap fee must be less than 100%.");
     	}
     	swapFee = fee;
 }

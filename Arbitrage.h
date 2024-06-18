@@ -9,7 +9,6 @@
 class Arbitrage {
 public:
 	virtual ~Arbitrage() {}
-};
 
 private:
 	virtual std::tuple<double, double> calculateArbitrage2Pools(

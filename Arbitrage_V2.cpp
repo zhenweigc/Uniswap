@@ -7,8 +7,8 @@
  * return optimal value of Eth and Profit(earned Eth)
  */
 std::tuple<double, double> Arbitrage_V2::calculateArbitrage2Pools(
-    const std::weak_ptr<LiquidityPool>& poolA, 
-    const std::weak_ptr<LiquidityPool>& poolB) const {
+    const std::weak_ptr<LiquidityPool>& weakPoolA, 
+    const std::weak_ptr<LiquidityPool>& weakPoolB) const {
 	
 	auto poolA = weakPoolA.lock();
 	auto poolB = weakPoolB.lock();
@@ -29,29 +29,21 @@ std::tuple<double, double> Arbitrage_V2::calculateArbitrage2Pools(
 	if (priceA > priceB) {
 		// ETH worth less in Pool A relative to DAI comparing to that of pool B
 		// We should use ETH to exchange for DAI in Pool B, then use that DAI to change back to ETH
-		double optimal_val;
 		x_a = poolB->getDai();
 		y_a = poolB->getEth();
 		x_b = poolA->getDai();
 		y_b = poolA->getEth();
-
-		optimal_val = calculateOptimalAmountIn(x_a, y_a, x_b, y_b, fee);
-		double profit = calculateProfit(x_a, y_a, x_b, y_b, fee, optimal_val);
-
-		return std::make_tuple(optimal_val, profit);
 	} else {
-		
-		double optimal_val;
 		x_a = poolA->getDai();
 		y_a = poolA->getEth();
 		x_b = poolB->getDai();
 		y_b = poolB->getEth();
-
-		optimal_val = calculateOptimalAmountIn(x_a, y_a, x_b, y_b, fee);
-		double profit = calculateProfit(x_a, y_a, x_b, y_b, fee, optimal_val);
-
-		return std::make_tuple(optimal_val, profit);
 	}
+	
+	double optimal_val = calculateOptimalAmountIn(x_a, y_a, x_b, y_b, fee);
+	double profit = calculateProfit(x_a, y_a, x_b, y_b, fee, optimal_val);
+	
+	return std::make_tuple(optimal_val, profit);
 }
 
 /**
@@ -86,7 +78,7 @@ double Arbitrage_V2::calculateProfit(
 		double x_a, double y_a, double x_b, double y_b, double fee, double amountIn) const {
 
 	double DaiOut = (1 - fee) * amountIn * x_a / ((1 - fee) * amountIn + y_a);
-	double EthOut = (1 - fee) * Daiout * y_b / ((1 - fee) * Daiout + x_b);
+	double EthOut = (1 - fee) * DaiOut * y_b / ((1 - fee) * DaiOut + x_b);
  
 	return (EthOut - amountIn);
 }

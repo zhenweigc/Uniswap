@@ -32,7 +32,7 @@ uint64_t Pool_Manager::addPool(std::shared_ptr<LiquidityPool> pool) {
  * A thread can obtain a ptr to a pool, stay idle, and the pool is destroyed by another thread
  */
 std::weak_ptr<LiquidityPool> Pool_Manager::getPool(uint64_t id) {
-    	std::lock_guard<std::mutex> lock(instance_mutex);
+    	std::lock_guard<std::mutex> lock(mutex);
     	auto it = pools.find(id);
     	if (it != pools.end()) {
         	return it->second;

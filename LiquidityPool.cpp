@@ -1,10 +1,10 @@
-#include "LiquidPool.h"
+#include "LiquidityPool.h"
 
 #include <stdexcept>
 
 LiquidityPool::LiquidityPool(double initialDai, double initialEth) {
        	if (initialDai <= 0 || initialEth <= 0) {
-		throw std::invalid_argument("Initial DAI and ETH of a pool must both be positive values.")
+		throw std::invalid_argument("Initial DAI and ETH of a pool must both be positive values.");
 	}
     	dai = initialDai;
     	eth = initialEth;

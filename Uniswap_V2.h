@@ -3,8 +3,6 @@
 
 #include "LiquidityPool.h"
 
-#include <mutex>
-
 class Uniswap_V2 : public LiquidityPool {
 
 private:
@@ -13,17 +11,17 @@ private:
 
 public:
 	Uniswap_V2(double initialDai, double initialEth);
-	~Uniswap_V2() override {}
+	~Uniswap_V2() override = default;
 
     	bool addLiquidity(double daiAmount, double ethAmount) override;
-    	bool removeLiquidity(double tokens) override;
+    	bool removeLiquidity(double daiAmount, double ethAmount) override;
     	double swapDaiToEth(double daiAmount) override;
     	double swapEthToDai(double ethAmount) override;
 
 	std::mutex& getMutex() override;
 
-	double getSwapFee() const;
-	bool setSwapFee(double fee);
+	double getSwapFee() const override;
+	void setSwapFee(double fee) override;
 };
 
 #endif

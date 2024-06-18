@@ -1,8 +1,10 @@
 #ifndef LIQUIDITY_POOL_H
 #define LIQUIDITY_POOL_H
 
+#include <mutex>
+
 class LiquidityPool {
-private:
+protected:
     double dai;    
     double eth;
 
@@ -23,8 +25,14 @@ public:
     virtual double swapDaiToEth(double daiAmount) = 0;
     virtual double swapEthToDai(double ethAmount) = 0;
 
+    virtual bool addLiquidity(double daiAmount, double ethAmount) = 0;
+    virtual bool removeLiquidity(double daiAmount, double ethAmount) = 0;
+
+    virtual double getSwapFee() const = 0;
+    virtual void setSwapFee(double fee) = 0;
+
     virtual std::mutex& getMutex() = 0;
-    virtual ~LiquidityPool() {}
+    virtual ~LiquidityPool() = default;
 };
 
 #endif
