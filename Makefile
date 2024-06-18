@@ -26,6 +26,10 @@ Pool_Manager.o: Pool_Manager.cpp
 clean:
 	rm -f *.o $(TARGET)
 
+.PHONY: clean_logs
+clean_logs:
+	rm -f Test/logs.txt
+
 .PHONY: valgrind
 valgrind:
 	@echo "Valgrind command will be defined here later"
