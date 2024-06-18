@@ -43,111 +43,130 @@ void Trade_Processor::processTrades(const std::vector<std::string>& filepaths) {
 void Trade_Processor::processFile(const std::string& filepath) {
 	std::ifstream file(filepath);
     	if (!file.is_open()) {
-		log("Failed to open file: " + filepath);
+        	log("Failed to open file: " + filepath);
         	return;
-	}
-
+    	}
+	
     	std::string line;
+	/**
+ 	* Each line should either have two, three or four tokens
+        * [Action] [Pool ID(if it needs one)] [amount 1] [amount 2(if needed)]
+	* Special Actions:
+ 	* [Sleep] [time]
+	* [calculateArbitrage] [PoolID1] [PoolID2]
+	* [addPool] [amount 1] [amount 2]
+	* [removePool] [PoolId]
+	*/
     	while (std::getline(file, line)) {
-		
 		std::istringstream iss(line);
         	std::string token;
         	std::vector<std::string> tokens;
 
-		while (std::getline(iss, token, ',')) {
+        	while (std::getline(iss, token, ' ')) {
 			tokens.push_back(token);
-        	}
+		}
 
-		/**
-		 * Each line should either have two, three or four tokens
-		 * [Pool ID] [Action] [Amount 1] [Amount 2]
-		 * [Pool ID] [calculateArbitrage] [Pool ID 2]
-		 * [Pool ID] [removePool]
-		 * [Pool ID] [addPool] [amount 1] [amount 2] (Pool ID input does not affect what Pool ID it is assigned to)
-		 * [Pool ID] [sleep] [msec] (Pool Id is useless here, this action lets the thread to sleep for given msec.)
-		 */
-        	if (tokens.size() < 2) {
-            		log("Malformed line: " + line);
+        	if (tokens.empty()) {
+            		log("Empty line: " + line);
             		continue;
         	}
-
-        	uint64_t poolId = std::stoull(tokens[0]);
-        	std::string action = tokens[1];
+		
+        	std::string action = tokens[0];
 
         	auto poolManager = Pool_Manager::getInstance();
-        	auto pool = poolManager->getPool(poolId).lock();
+        	if (action == "addPool") {
+			
+			if (tokens.size() != 3) {
+                		log("Invalid addPool action: " + line);
+                		continue;
+            		}
+            		double amount1 = std::stod(tokens[1]);
+            		double amount2 = std::stod(tokens[2]);
 
-        	if (!pool) {
-			log("Invalid pool ID: " + std::to_string(poolId));
-            		continue;
-        	}
-
-        	std::lock_guard<std::mutex> lock(pool->getMutex());
-
-        	if (action == "addLiquidity" && tokens.size() >= 4) {
-	
-			double amount1 = std::stod(tokens[2]);
-            		double amount2 = std::stod(tokens[3]);
-            		pool->addLiquidity(amount1, amount2);
-       
-	       	} else if (action == "removeLiquidity" && tokens.size() >= 4) {
+            		auto newPool = std::make_shared<Uniswap_V2>(amount1, amount2);
+            		uint64_t poolId = poolManager->addPool(newPool);
+            		log("Added new pool with ID: " + std::to_string(poolId));
+			
+        	} else if (action == "removePool") {
             		
-			double amount1 = std::stod(tokens[2]);
-            		double amount2 = std::stod(tokens[3]);
-            		pool->removeLiquidity(amount1, amount2);
-        
-		} else if (action == "swapDaiToEth"  && tokens.size() >= 3) {
+			if (tokens.size() != 2) {
+				log("Invalid removePool action: " + line);
+                		continue;
+            		}
             
-			double amount1 = std::stod(tokens[2]);
-            		double ethOut = pool->swapDaiToEth(amount1);
-            		log("Swapped " + std::to_string(amount1) + " DAI for " + std::to_string(ethOut) + " ETH in pool " + std::to_string(poolId));
-        
-		} else if (action == "swapEthToDai"  && tokens.size() >= 3) {
-            		
-			double amount1 = std::stod(tokens[2]);
-            		double daiOut = pool->swapEthToDai(amount1);
-            		log("Swapped " + std::to_string(amount1) + " ETH for " + std::to_string(daiOut) + " DAI in pool " + std::to_string(poolId));
-        
-		} else if (action == "calculateArbitrage") {
+			uint64_t poolId = std::stoull(tokens[1]);
+            		auto removedPool = poolManager->removePool(poolId);
+            		if (removedPool) {
+				log("Removed pool with ID: " + std::to_string(poolId));
+            		} else {
+                		log("Failed to remove pool with ID: " + std::to_string(poolId));
+            		}
 
-			if (tokens.size() < 3) {
-                		log("Malformed line: " + line);
+        	} else if (action == "Sleep") {
+            
+			if (tokens.size() != 2) {
+                		log("Invalid Sleep action: " + line);
+                		continue;
+            		}
+            
+			int sleepTime = static_cast<int>(std::stod(tokens[1]));
+            
+			std::this_thread::sleep_for(std::chrono::milliseconds(sleepTime));
+            		log("Slept for " + std::to_string(sleepTime) + " milliseconds");
+
+        	} else if (action == "calculateArbitrage") {
+            		if (tokens.size() != 3) {
+				log("Invalid calculateArbitrage action: " + line);
                 		continue;
             		}
             		
-			uint64_t poolId2 = std::stoull(tokens[2]);
+			uint64_t poolAId = std::stoull(tokens[1]);
+            		uint64_t poolBId = std::stoull(tokens[2]);
             		Arbitrage_V2 arbitrage;
-            		auto result = arbitrage.calculateArbitrage2Pools(poolId, poolId2);
+            		auto result = arbitrage.calculateArbitrage2Pools(poolAId, poolBId);
             		log("Arbitrage: Optimal ETH: " + std::to_string(std::get<0>(result)) + ", Profit: " + std::to_string(std::get<1>(result)));
-        	
-		} else if (action == "addPool") {
 
-			double amount1 = std::stod(tokens[2]);
-            		double amount2 = std::stod(tokens[3]);
-	     		auto newPool = std::make_shared<Uniswap_V2>(amount1, amount2);
-			poolId = poolManager->addPool(newPool);
-			log("Added pool " + std::to_string(poolId) + " with " + std::to_string(amount1) + " DAI and " + std::to_string(amount2) + " ETH.");
-	
-		} else if (action == "removePool") {
-			
-			auto removedPool = poolManager->removePool(poolId);
-            		if (removedPool) {
-				log("Removed pool " + std::to_string(poolId));
-            		} else {
-				log("Failed to remove pool " + std::to_string(poolId) + ": Pool not found.");
+        	} else {
+            		if (tokens.size() < 3) {
+                		log("Invalid action: " + line);
+                		continue;
             		}
-		
-		} else if (action == "sleep") {
-			
-			double amount1 = std::stod(tokens[2]);
-			int sleepDuration = static_cast<int>(amount1);
-            		log("Sleeping for " + std::to_string(sleepDuration) + " milliseconds.");
-            		std::this_thread::sleep_for(std::chrono::milliseconds(sleepDuration));
+            		
+			uint64_t poolId = std::stoull(tokens[1]);
+            		double amount1 = std::stod(tokens[2]);
+            		double amount2 = tokens.size() > 3 ? std::stod(tokens[3]) : 0.0;
 
-		} else {
-            
-			log("Unknown action: " + action);
-        	
+            		auto pool = poolManager->getPool(poolId).lock();
+            		if (!pool) {
+				log("Invalid pool ID: " + std::to_string(poolId));
+                		continue;
+            		}
+
+            		if (action == "addLiquidity") {
+				
+				if (pool->addLiquidity(amount1, amount2)) {
+					log("Added liquidity to pool " + std::to_string(poolId) + ": " + std::to_string(amount1) + " DAI, " + std::to_string(amount2) + " ETH");
+                		} else {
+                    			log("Failed to add liquidity to pool " + std::to_string(poolId));
+                		}
+				
+			} else if (action == "removeLiquidity") {
+                		
+				if (pool->removeLiquidity(amount1, amount2)) {
+                    			log("Removed liquidity from pool " + std::to_string(poolId) + ": " + std::to_string(amount1) + " DAI, " + std::to_string(amount2) + " ETH");
+                		} else {
+					log("Failed to remove liquidity from pool " + std::to_string(poolId));
+                		}
+				
+            		} else if (action == "swapDaiToEth") {
+                		double ethOut = pool->swapDaiToEth(amount1);
+                		log("Swapped " + std::to_string(amount1) + " DAI for " + std::to_string(ethOut) + " ETH in pool " + std::to_string(poolId));
+            		} else if (action == "swapEthToDai") {
+                		double daiOut = pool->swapEthToDai(amount1);
+                		log("Swapped " + std::to_string(amount1) + " ETH for " + std::to_string(daiOut) + " DAI in pool " + std::to_string(poolId));
+            		} else {
+				log("Unknown action: " + action);
+			}
 		}
 	}
 }
