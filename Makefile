@@ -32,7 +32,7 @@ clean_logs:
 
 .PHONY: valgrind
 valgrind:
-	@echo "Valgrind command will be defined here later"
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./$(TARGET) V2 Tests/logs.txt Tests/Arbitrage_test1_f1.txt Tests/Arbitrage_test1_f2.txt
 
 .PHONY: all
 all: clean $(TARGET)
