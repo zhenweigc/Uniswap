@@ -159,13 +159,19 @@ void Trade_Processor::processFile(const std::string& filepath) {
                 		}
 				
             		} else if (action == "swapDaiToEth") {
-                		double ethOut = pool->swapDaiToEth(amount1);
+                		
+				double ethOut = pool->swapDaiToEth(amount1);
                 		log("Swapped " + std::to_string(amount1) + " DAI for " + std::to_string(ethOut) + " ETH in pool " + std::to_string(poolId));
-            		} else if (action == "swapEthToDai") {
-                		double daiOut = pool->swapEthToDai(amount1);
+            		
+			} else if (action == "swapEthToDai") {
+                		
+				double daiOut = pool->swapEthToDai(amount1);
                 		log("Swapped " + std::to_string(amount1) + " ETH for " + std::to_string(daiOut) + " DAI in pool " + std::to_string(poolId));
-            		} else {
+            		
+			} else {
+				
 				log("Unknown action: " + action);
+			
 			}
 		}
 	}
