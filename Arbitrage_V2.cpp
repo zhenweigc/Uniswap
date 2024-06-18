@@ -85,7 +85,7 @@ double Arbitrage_V2::calculateOptimalAmountIn(
 double Arbitrage_V2::calculateProfit(
 		double x_a, double y_a, double x_b, double y_b, double fee, double amountIn) const {
 
-	double DaiOut = (1 - fee) * amountIn * y_a / ((1 - fee) * amountIn + x_a);
+	double DaiOut = (1 - fee) * amountIn * x_a / ((1 - fee) * amountIn + y_a);
 	double EthOut = (1 - fee) * Daiout * y_b / ((1 - fee) * Daiout + x_b);
  
 	return (EthOut - amountIn);
