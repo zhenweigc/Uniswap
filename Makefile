@@ -28,7 +28,7 @@ clean:
 
 .PHONY: clean_logs
 clean_logs:
-	rm -f Test/logs.txt
+	rm -f Tests/logs.txt
 
 .PHONY: valgrind
 valgrind: generate_tests
@@ -37,14 +37,23 @@ valgrind: generate_tests
 	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./$(TARGET) V2 Tests/logs.txt Tests/Multifile_test1_f1.txt Tests/Multifile_test1_f2.txt Tests/Multifile_test1_f3.txt Tests/Multifile_test1_f4.txt
 	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./$(TARGET) V2 Tests/logs.txt Tests/Impossible_action_test1_f1.txt	
 	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./$(TARGET) V2 Tests/logs.txt Tests/Benchmark_non_blocking_1.txt Tests/Benchmark_non_blocking_2.txt Tests/Benchmark_non_blocking_3.txt Tests/Benchmark_non_blocking_4.txt Tests/Benchmark_non_blocking_5.txt Tests/Benchmark_non_blocking_6.txt Tests/Benchmark_non_blocking_7.txt Tests/Benchmark_non_blocking_8.txt Tests/Benchmark_non_blocking_9.txt Tests/Benchmark_non_blocking_10.txt
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./$(TARGET) V2 Tests/logs.txt Tests/mega_benchmark_test.txt
+
+.PHONY: benchmark
+benchmark:
+	bash -c "time ./$(TARGET) V2 Tests/logs.txt Tests/mega_benchmark_test.txt"
+	make clean_logs
+	bash -c "time ./$(TARGET) V2 Tests/logs.txt Tests/Benchmark_non_blocking_1.txt Tests/Benchmark_non_blocking_2.txt Tests/Benchmark_non_blocking_3.txt Tests/Benchmark_non_blocking_4.txt Tests/Benchmark_non_blocking_5.txt Tests/Benchmark_non_blocking_6.txt Tests/Benchmark_non_blocking_7.txt Tests/Benchmark_non_blocking_8.txt Tests/Benchmark_non_blocking_9.txt Tests/Benchmark_non_blocking_10.txt"
+	make clean_logs
 
 .PHONY: generate_tests
 generate_tests:
 	python3 Tests/non_blocking_test_case_generating_script.py
+	python3 Tests/one_file_benchmark.py 
 
 .PHONY: clean_benchmark_tests
 clean_benchmark_tests:
-	rm -f Tests/Benchmark_non_blocking_*.txt
+	rm -f Tests/Benchmark_non_blocking_*.txt Tests/mega_benchmark_test.txt 
 
 .PHONY: all
 all: clean $(TARGET)

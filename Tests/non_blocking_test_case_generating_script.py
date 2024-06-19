@@ -7,6 +7,7 @@ output_dir = os.path.dirname(os.path.abspath(__file__))  # Get the directory of 
 actions = ["addLiquidity", "removeLiquidity", "swapDaiToEth", "swapEthToDai", "calculateArbitrage"]
 max_amount = 1000
 sleep_time = 1000
+num_actions = 1000
 
 def generate_test_file(filename, pool_ids):
     with open(filename, 'w') as f:
@@ -19,7 +20,7 @@ def generate_test_file(filename, pool_ids):
         f.write(f"Sleep {sleep_time}\n")
         
         # Generate random actions
-        for _ in range(1000):
+        for _ in range(num_actions):
             action = random.choice(actions)
             if action == "calculateArbitrage":
                 pool1 = random.choice(pool_ids)
