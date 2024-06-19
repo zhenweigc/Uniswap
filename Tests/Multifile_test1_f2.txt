@@ -1,0 +1,5 @@
+addPool 1200 400
+Sleep 1000
+addLiquidity 1 300 150
+swapEthToDai 1 50
+removeLiquidity 1 150 75

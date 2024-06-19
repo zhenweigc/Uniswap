@@ -33,6 +33,10 @@ clean_logs:
 .PHONY: valgrind
 valgrind:
 	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./$(TARGET) V2 Tests/logs.txt Tests/Arbitrage_test1_f1.txt Tests/Arbitrage_test1_f2.txt
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./$(TARGET) V2 Tests/logs.txt Tests/Arbitrage_test2_f1.txt Tests/Arbitrage_test2_f2.txt Tests/Arbitrage_test2_f3.txt
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./$(TARGET) V2 Tests/logs.txt Tests/Multifile_test1_f1.txt Tests/Multifile_test1_f2.txt Tests/Multifile_test1_f3.txt Tests/Multifile_test1_f4.txt
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./$(TARGET) V2 Tests/logs.txt Tests/Impossible_action_test1_f1.txt	
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./$(TARGET) V2 Tests/logs.txt Tests/Benchmark_non_blocking_1.txt Tests/Benchmark_non_blocking_2.txt Tests/Benchmark_non_blocking_3.txt Tests/Benchmark_non_blocking_4.txt Tests/Benchmark_non_blocking_5.txt Tests/Benchmark_non_blocking_6.txt Tests/Benchmark_non_blocking_7.txt Tests/Benchmark_non_blocking_8.txt Tests/Benchmark_non_blocking_9.txt Tests/Benchmark_non_blocking_10.txt
 
 .PHONY: all
 all: clean $(TARGET)

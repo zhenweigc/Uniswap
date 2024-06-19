@@ -1,0 +1,1002 @@
+addPool 135720.91 49346.55
+Sleep 1000
+swapEthToDai 2 883.45
+addLiquidity 8 176.39 475.54
+swapEthToDai 9 954.49
+swapDaiToEth 9 344.69
+removeLiquidity 6 188.92 947.15
+swapDaiToEth 0 539.66
+swapEthToDai 5 477.3
+removeLiquidity 6 421.85 827.29
+swapDaiToEth 5 790.19
+removeLiquidity 6 376.6 949.05
+addLiquidity 4 883.11 914.74
+swapDaiToEth 5 434.46
+swapEthToDai 4 772.12
+swapEthToDai 3 971.97
+removeLiquidity 7 140.32 994.77
+swapEthToDai 7 309.12
+swapDaiToEth 9 9.13
+swapEthToDai 9 357.19
+swapDaiToEth 8 433.21
+removeLiquidity 9 534.48 497.74
+swapEthToDai 5 623.58
+removeLiquidity 9 707.84 343.02
+swapEthToDai 7 269.85
+addLiquidity 1 681.62 830.29
+addLiquidity 8 888.83 896.66
+swapDaiToEth 7 868.83
+swapEthToDai 3 155.53
+removeLiquidity 5 119.77 984.32
+addLiquidity 8 759.61 967.8
+addLiquidity 2 936.12 241.09
+addLiquidity 7 956.65 650.61
+addLiquidity 1 713.29 601.06
+removeLiquidity 6 988.67 851.66
+addLiquidity 6 41.87 561.03
+swapDaiToEth 0 510.71
+swapDaiToEth 2 984.96
+addLiquidity 5 511.83 206.41
+removeLiquidity 6 634.75 681.85
+removeLiquidity 1 966.24 427.88
+swapDaiToEth 8 430.75
+removeLiquidity 3 740.76 166.75
+swapDaiToEth 7 890.63
+swapEthToDai 4 933.84
+addLiquidity 3 923.33 574.0
+swapDaiToEth 8 579.17
+swapEthToDai 4 782.52
+addLiquidity 6 659.06 612.68
+removeLiquidity 3 362.37 809.98
+swapEthToDai 3 743.78
+removeLiquidity 3 667.63 461.32
+addLiquidity 8 876.92 370.65
+swapDaiToEth 7 771.89
+addLiquidity 0 613.08 496.88
+addLiquidity 1 645.61 195.91
+addLiquidity 2 714.07 547.68
+addLiquidity 6 52.52 74.63
+swapEthToDai 9 228.76
+removeLiquidity 3 199.21 934.76
+removeLiquidity 3 469.24 945.12
+removeLiquidity 5 840.87 476.71
+addLiquidity 4 793.03 529.49
+swapDaiToEth 0 376.0
+addLiquidity 8 922.99 638.47
+swapDaiToEth 8 778.05
+swapEthToDai 6 778.82
+removeLiquidity 3 40.66 770.92
+swapEthToDai 3 234.62
+addLiquidity 4 388.99 619.3
+swapEthToDai 0 863.7
+removeLiquidity 9 735.76 285.44
+addLiquidity 0 582.07 885.59
+swapDaiToEth 4 403.62
+swapDaiToEth 7 412.64
+swapEthToDai 3 62.27
+swapDaiToEth 6 664.57
+addLiquidity 3 70.17 72.27
+removeLiquidity 5 475.45 609.06
+swapEthToDai 1 800.4
+addLiquidity 7 48.52 384.21
+removeLiquidity 4 875.48 504.2
+swapDaiToEth 6 875.73
+addLiquidity 9 812.72 161.96
+addLiquidity 6 976.75 407.16
+removeLiquidity 0 344.42 176.78
+swapEthToDai 5 125.88
+removeLiquidity 5 332.61 565.02
+swapEthToDai 2 952.13
+swapEthToDai 0 113.28
+swapEthToDai 5 673.37
+swapDaiToEth 5 553.35
+swapEthToDai 6 138.56
+removeLiquidity 9 336.87 391.35
+swapDaiToEth 3 593.43
+swapDaiToEth 8 178.57
+swapEthToDai 1 336.12
+addLiquidity 7 228.78 36.11
+addLiquidity 9 575.6 341.83
+swapEthToDai 4 655.96
+swapEthToDai 3 145.5
+addLiquidity 9 814.36 507.69
+addLiquidity 6 855.11 142.79
+swapEthToDai 3 17.09
+swapDaiToEth 2 665.6
+swapDaiToEth 8 198.28
+swapEthToDai 1 525.17
+addLiquidity 6 221.45 883.82
+swapEthToDai 3 595.19
+removeLiquidity 3 480.53 34.98
+addLiquidity 4 454.68 720.42
+removeLiquidity 1 812.01 810.56
+swapEthToDai 2 324.43
+swapEthToDai 4 35.01
+addLiquidity 0 144.19 914.94
+swapDaiToEth 1 743.47
+addLiquidity 3 6.67 828.46
+swapDaiToEth 2 566.18
+swapDaiToEth 7 92.81
+swapDaiToEth 8 857.19
+swapDaiToEth 0 708.95
+swapDaiToEth 0 58.28
+swapDaiToEth 1 85.73
+addLiquidity 9 624.67 921.33
+swapDaiToEth 2 617.97
+swapDaiToEth 6 982.3
+swapEthToDai 4 880.63
+swapDaiToEth 2 110.86
+swapEthToDai 3 363.64
+removeLiquidity 7 973.63 358.79
+removeLiquidity 5 392.16 908.72
+addLiquidity 0 582.88 434.39
+removeLiquidity 7 5.37 24.24
+removeLiquidity 4 959.51 278.18
+removeLiquidity 3 209.42 683.95
+addLiquidity 6 53.45 207.7
+swapDaiToEth 4 170.16
+removeLiquidity 2 945.65 409.16
+swapDaiToEth 1 842.13
+swapEthToDai 0 197.74
+swapDaiToEth 6 681.23
+swapEthToDai 7 139.55
+removeLiquidity 2 892.85 321.51
+swapEthToDai 1 270.59
+addLiquidity 5 901.61 436.09
+swapEthToDai 3 47.4
+swapEthToDai 5 199.78
+swapDaiToEth 1 276.37
+addLiquidity 8 333.86 754.74
+swapEthToDai 8 437.8
+swapEthToDai 2 43.59
+swapDaiToEth 8 64.05
+swapDaiToEth 6 30.07
+removeLiquidity 2 81.71 145.27
+swapDaiToEth 6 689.78
+addLiquidity 8 341.55 563.22
+removeLiquidity 3 201.68 522.7
+removeLiquidity 3 675.66 427.96
+removeLiquidity 7 859.16 874.22
+addLiquidity 9 883.71 718.6
+addLiquidity 4 222.1 117.03
+swapEthToDai 9 424.93
+swapDaiToEth 3 527.55
+removeLiquidity 7 616.09 539.17
+swapDaiToEth 9 899.73
+removeLiquidity 3 888.41 187.37
+swapDaiToEth 6 366.45
+swapDaiToEth 0 72.44
+addLiquidity 8 905.73 490.53
+addLiquidity 3 734.87 570.84
+swapDaiToEth 3 241.71
+removeLiquidity 8 858.48 239.04
+swapEthToDai 9 215.78
+swapDaiToEth 1 33.5
+swapDaiToEth 0 996.3
+swapDaiToEth 1 566.05
+addLiquidity 7 411.96 814.86
+swapEthToDai 7 106.79
+removeLiquidity 4 83.82 240.77
+addLiquidity 3 142.73 981.88
+swapEthToDai 4 199.38
+swapEthToDai 1 916.17
+swapDaiToEth 4 725.91
+swapDaiToEth 5 509.02
+addLiquidity 2 495.51 735.14
+swapEthToDai 0 379.36
+removeLiquidity 3 655.57 720.1
+swapDaiToEth 3 858.0
+addLiquidity 5 514.89 144.84
+addLiquidity 0 320.25 635.3
+swapDaiToEth 2 737.38
+addLiquidity 8 892.41 375.2
+addLiquidity 1 415.71 754.04
+addLiquidity 0 567.02 589.34
+removeLiquidity 9 63.18 216.52
+addLiquidity 9 956.54 568.74
+removeLiquidity 7 905.39 889.88
+swapDaiToEth 7 193.28
+removeLiquidity 4 616.71 199.56
+addLiquidity 7 570.33 498.16
+addLiquidity 2 126.93 709.77
+addLiquidity 4 729.64 853.25
+removeLiquidity 8 114.86 401.39
+addLiquidity 6 641.44 516.84
+removeLiquidity 8 228.05 633.4
+removeLiquidity 1 902.0 707.78
+addLiquidity 1 862.72 575.88
+removeLiquidity 6 563.22 559.14
+addLiquidity 3 533.67 942.14
+addLiquidity 0 427.05 632.42
+swapEthToDai 7 835.35
+swapEthToDai 4 220.01
+addLiquidity 4 887.87 587.47
+removeLiquidity 3 876.28 920.56
+removeLiquidity 6 969.39 473.73
+swapDaiToEth 9 800.33
+swapDaiToEth 1 625.03
+swapEthToDai 1 656.5
+removeLiquidity 5 532.64 288.63
+swapEthToDai 5 926.87
+removeLiquidity 3 455.81 707.64
+addLiquidity 7 64.43 234.8
+swapEthToDai 7 565.57
+swapDaiToEth 3 290.6
+addLiquidity 8 412.83 452.7
+swapDaiToEth 3 977.16
+removeLiquidity 5 207.14 407.1
+swapDaiToEth 9 582.06
+swapEthToDai 7 304.44
+removeLiquidity 0 466.19 500.63
+addLiquidity 6 311.12 754.58
+removeLiquidity 9 471.08 705.45
+removeLiquidity 9 34.54 208.71
+swapEthToDai 6 576.83
+removeLiquidity 9 386.42 575.62
+addLiquidity 6 955.95 172.83
+addLiquidity 8 975.61 785.24
+addLiquidity 8 88.55 472.71
+swapDaiToEth 3 998.77
+addLiquidity 3 692.15 338.94
+swapDaiToEth 4 621.6
+removeLiquidity 8 744.72 83.72
+swapEthToDai 5 607.79
+addLiquidity 6 634.9 159.87
+removeLiquidity 5 722.7 799.89
+swapEthToDai 9 597.77
+swapEthToDai 5 8.29
+swapDaiToEth 8 315.44
+addLiquidity 7 515.09 982.89
+swapEthToDai 8 863.73
+removeLiquidity 7 374.29 471.8
+removeLiquidity 3 353.19 25.93
+swapDaiToEth 4 344.49
+swapDaiToEth 5 370.13
+swapDaiToEth 7 952.57
+swapDaiToEth 3 288.15
+swapEthToDai 6 836.2
+removeLiquidity 7 751.95 728.27
+swapEthToDai 0 508.7
+swapEthToDai 6 66.06
+removeLiquidity 5 85.72 962.22
+removeLiquidity 7 639.9 962.44
+addLiquidity 3 894.39 223.93
+addLiquidity 4 894.84 798.18
+addLiquidity 9 452.64 649.74
+swapEthToDai 0 336.35
+swapEthToDai 6 56.42
+removeLiquidity 5 665.05 281.46
+swapEthToDai 3 32.67
+removeLiquidity 4 755.07 129.25
+swapDaiToEth 9 938.74
+swapDaiToEth 1 124.78
+swapDaiToEth 9 595.26
+swapEthToDai 1 7.73
+swapDaiToEth 0 414.45
+swapEthToDai 7 769.35
+addLiquidity 3 814.54 595.93
+removeLiquidity 1 553.29 790.46
+swapEthToDai 3 101.63
+removeLiquidity 4 505.76 322.86
+swapEthToDai 4 75.25
+swapDaiToEth 0 257.23
+addLiquidity 5 544.42 632.92
+removeLiquidity 7 514.15 253.37
+addLiquidity 1 364.65 319.64
+addLiquidity 0 824.07 984.54
+swapEthToDai 3 373.92
+swapEthToDai 4 26.44
+swapEthToDai 4 872.29
+swapDaiToEth 6 3.81
+swapEthToDai 0 487.65
+removeLiquidity 7 103.53 79.54
+removeLiquidity 3 273.08 42.32
+swapEthToDai 2 337.55
+removeLiquidity 9 913.32 209.13
+removeLiquidity 6 784.87 890.7
+swapDaiToEth 4 154.14
+removeLiquidity 8 435.62 964.34
+swapEthToDai 0 357.86
+addLiquidity 0 391.99 13.23
+swapDaiToEth 2 162.97
+swapDaiToEth 8 476.89
+addLiquidity 0 16.43 989.51
+swapDaiToEth 3 181.74
+swapEthToDai 7 16.3
+addLiquidity 1 116.2 475.59
+swapDaiToEth 7 911.46
+swapEthToDai 6 885.38
+addLiquidity 3 363.91 331.1
+removeLiquidity 9 937.39 405.83
+addLiquidity 0 975.62 972.84
+addLiquidity 0 218.13 136.62
+swapDaiToEth 5 880.91
+swapDaiToEth 7 774.79
+swapEthToDai 3 989.79
+swapEthToDai 0 153.29
+swapDaiToEth 8 854.3
+removeLiquidity 2 483.07 968.72
+swapDaiToEth 1 491.64
+addLiquidity 4 325.91 913.58
+swapDaiToEth 6 865.98
+swapEthToDai 8 434.44
+removeLiquidity 4 225.52 858.4
+addLiquidity 1 173.54 130.89
+removeLiquidity 2 154.04 621.59
+addLiquidity 8 443.08 259.07
+removeLiquidity 4 71.83 382.84
+addLiquidity 7 589.44 276.59
+removeLiquidity 7 718.85 199.78
+swapEthToDai 3 161.25
+swapEthToDai 0 831.8
+swapEthToDai 9 456.99
+addLiquidity 7 51.95 235.41
+addLiquidity 1 138.52 719.23
+removeLiquidity 9 939.14 600.93
+removeLiquidity 0 87.77 922.94
+swapDaiToEth 0 793.63
+swapEthToDai 7 9.29
+addLiquidity 8 285.66 178.91
+removeLiquidity 3 786.01 131.51
+addLiquidity 5 676.94 969.38
+removeLiquidity 4 656.64 313.3
+removeLiquidity 6 501.3 463.43
+swapEthToDai 4 572.53
+swapEthToDai 6 132.74
+swapEthToDai 3 874.64
+addLiquidity 5 892.85 624.08
+removeLiquidity 2 845.79 329.09
+swapEthToDai 7 937.88
+removeLiquidity 5 333.6 894.31
+removeLiquidity 0 912.47 640.04
+addLiquidity 4 54.39 266.34
+swapEthToDai 6 605.16
+removeLiquidity 2 868.32 250.75
+swapEthToDai 4 60.71
+swapDaiToEth 0 786.08
+removeLiquidity 5 636.91 54.86
+removeLiquidity 1 884.83 108.64
+removeLiquidity 4 297.85 945.75
+removeLiquidity 6 110.18 662.16
+removeLiquidity 4 763.56 101.34
+swapEthToDai 2 872.35
+removeLiquidity 7 219.11 889.42
+removeLiquidity 3 691.5 662.51
+addLiquidity 9 471.45 454.62
+removeLiquidity 7 490.4 564.43
+swapDaiToEth 6 549.01
+addLiquidity 8 237.62 636.55
+addLiquidity 3 692.45 844.04
+addLiquidity 4 175.64 905.34
+removeLiquidity 0 902.21 333.34
+removeLiquidity 0 221.58 494.37
+swapDaiToEth 4 436.84
+swapDaiToEth 5 299.53
+removeLiquidity 6 406.63 149.18
+removeLiquidity 6 557.26 843.71
+addLiquidity 3 61.94 946.61
+addLiquidity 6 905.1 72.84
+removeLiquidity 7 383.3 554.34
+swapEthToDai 1 121.94
+addLiquidity 4 676.79 925.76
+removeLiquidity 1 815.18 662.26
+removeLiquidity 1 555.93 691.62
+removeLiquidity 5 555.69 916.59
+swapDaiToEth 9 251.16
+swapEthToDai 4 615.55
+swapEthToDai 9 923.68
+addLiquidity 8 146.39 618.65
+swapDaiToEth 5 600.24
+removeLiquidity 9 162.27 843.04
+swapDaiToEth 3 306.56
+swapEthToDai 1 323.84
+removeLiquidity 7 642.76 814.35
+swapDaiToEth 6 493.68
+swapDaiToEth 1 911.53
+addLiquidity 0 918.98 829.5
+removeLiquidity 3 672.18 685.9
+addLiquidity 3 81.59 644.83
+swapEthToDai 9 621.19
+addLiquidity 8 275.62 837.42
+addLiquidity 7 963.31 901.07
+swapDaiToEth 5 28.44
+addLiquidity 3 590.72 951.78
+swapDaiToEth 4 555.49
+addLiquidity 2 653.57 498.05
+swapEthToDai 1 588.93
+swapEthToDai 9 751.94
+swapDaiToEth 0 669.16
+removeLiquidity 9 767.23 455.14
+addLiquidity 7 537.03 690.42
+addLiquidity 0 584.36 478.42
+swapDaiToEth 6 647.67
+swapDaiToEth 5 266.88
+addLiquidity 2 893.76 362.26
+removeLiquidity 9 166.67 447.97
+addLiquidity 8 747.56 847.79
+removeLiquidity 7 134.25 505.13
+swapEthToDai 7 911.68
+removeLiquidity 3 60.89 84.37
+addLiquidity 7 134.66 750.64
+swapDaiToEth 7 119.82
+swapDaiToEth 0 602.72
+removeLiquidity 1 502.78 170.84
+swapEthToDai 1 684.94
+swapDaiToEth 5 700.92
+removeLiquidity 0 32.56 252.48
+swapDaiToEth 0 742.59
+removeLiquidity 5 898.52 80.23
+removeLiquidity 1 572.02 932.76
+swapDaiToEth 9 80.33
+swapDaiToEth 6 303.81
+removeLiquidity 3 671.36 486.09
+swapEthToDai 0 729.29
+removeLiquidity 4 648.26 832.39
+swapDaiToEth 3 658.76
+removeLiquidity 6 736.98 729.3
+removeLiquidity 1 592.88 535.46
+swapDaiToEth 4 321.22
+swapEthToDai 9 700.47
+addLiquidity 8 880.46 254.26
+swapDaiToEth 4 774.54
+removeLiquidity 4 878.85 100.71
+removeLiquidity 8 699.53 313.71
+addLiquidity 7 855.54 440.09
+swapDaiToEth 3 18.47
+removeLiquidity 3 96.52 797.64
+removeLiquidity 7 265.15 611.54
+swapEthToDai 2 208.67
+swapEthToDai 9 286.15
+addLiquidity 5 899.1 496.92
+removeLiquidity 7 219.72 226.91
+addLiquidity 7 237.37 363.9
+addLiquidity 2 296.95 271.01
+swapDaiToEth 5 96.41
+swapEthToDai 1 714.72
+swapDaiToEth 9 910.37
+addLiquidity 5 545.77 218.4
+swapEthToDai 3 953.18
+removeLiquidity 3 226.8 859.49
+removeLiquidity 0 308.49 288.11
+swapDaiToEth 9 913.77
+swapEthToDai 9 782.76
+removeLiquidity 6 482.52 585.69
+swapEthToDai 2 382.11
+addLiquidity 5 888.62 50.02
+swapEthToDai 5 730.57
+addLiquidity 5 356.14 842.62
+swapEthToDai 5 543.17
+addLiquidity 7 162.2 561.16
+swapDaiToEth 3 979.81
+swapDaiToEth 2 875.97
+swapDaiToEth 8 953.72
+swapEthToDai 1 199.22
+addLiquidity 8 929.53 798.85
+swapEthToDai 2 265.91
+removeLiquidity 5 594.03 969.43
+removeLiquidity 8 368.04 802.7
+swapEthToDai 8 4.79
+swapDaiToEth 3 916.37
+addLiquidity 3 543.62 654.51
+swapDaiToEth 4 160.56
+removeLiquidity 5 881.18 494.95
+addLiquidity 4 932.91 195.27
+swapDaiToEth 1 930.5
+removeLiquidity 3 236.87 13.23
+addLiquidity 4 91.18 522.09
+removeLiquidity 6 541.76 487.7
+swapDaiToEth 9 38.11
+addLiquidity 9 964.18 6.68
+addLiquidity 5 196.55 871.18
+removeLiquidity 0 329.05 40.9
+swapEthToDai 0 206.74
+swapDaiToEth 4 150.07
+removeLiquidity 3 499.57 921.47
+swapDaiToEth 0 272.87
+swapEthToDai 5 471.91
+swapEthToDai 2 480.07
+removeLiquidity 2 161.81 690.69
+swapDaiToEth 1 532.02
+removeLiquidity 1 410.19 676.93
+swapDaiToEth 7 484.59
+swapDaiToEth 0 165.5
+swapDaiToEth 1 652.29
+swapDaiToEth 2 692.71
+swapEthToDai 2 448.42
+swapEthToDai 2 68.51
+removeLiquidity 2 489.04 203.93
+removeLiquidity 7 603.52 805.14
+swapEthToDai 1 411.69
+removeLiquidity 7 769.26 22.68
+addLiquidity 1 87.59 237.0
+swapEthToDai 3 362.55
+swapDaiToEth 0 507.22
+swapDaiToEth 2 553.0
+swapEthToDai 2 607.27
+addLiquidity 4 621.67 135.57
+removeLiquidity 1 144.95 51.02
+removeLiquidity 5 826.28 134.09
+removeLiquidity 1 507.49 599.92
+addLiquidity 0 9.73 570.18
+removeLiquidity 3 912.71 628.79
+addLiquidity 5 738.76 665.81
+removeLiquidity 6 578.74 122.09
+swapEthToDai 2 51.07
+swapDaiToEth 4 579.2
+removeLiquidity 5 813.52 2.21
+swapEthToDai 1 77.25
+removeLiquidity 5 808.62 933.74
+removeLiquidity 0 282.18 974.57
+swapDaiToEth 0 421.08
+swapDaiToEth 6 113.83
+removeLiquidity 0 855.93 56.96
+removeLiquidity 9 8.89 661.76
+swapDaiToEth 5 746.32
+swapEthToDai 3 123.0
+addLiquidity 5 50.79 425.58
+swapEthToDai 9 520.49
+removeLiquidity 6 61.39 654.33
+removeLiquidity 1 653.25 96.33
+swapEthToDai 4 212.44
+removeLiquidity 4 192.93 534.48
+swapDaiToEth 5 327.25
+removeLiquidity 7 974.43 280.69
+removeLiquidity 8 989.09 715.75
+addLiquidity 9 344.37 423.61
+addLiquidity 3 914.54 837.08
+swapDaiToEth 8 186.05
+swapEthToDai 1 971.1
+swapEthToDai 7 581.22
+removeLiquidity 8 205.83 492.1
+removeLiquidity 3 382.89 128.3
+swapDaiToEth 1 854.06
+addLiquidity 8 39.86 979.19
+removeLiquidity 1 463.86 999.5
+removeLiquidity 8 443.22 203.8
+removeLiquidity 6 775.14 573.99
+removeLiquidity 2 334.74 819.32
+removeLiquidity 1 761.37 455.36
+removeLiquidity 9 745.29 486.51
+swapEthToDai 0 225.12
+addLiquidity 7 539.05 722.65
+removeLiquidity 6 904.17 146.74
+addLiquidity 7 731.38 643.11
+removeLiquidity 8 486.1 972.77
+swapDaiToEth 8 10.95
+swapEthToDai 9 382.08
+swapDaiToEth 1 279.84
+swapEthToDai 8 200.27
+swapDaiToEth 7 550.23
+removeLiquidity 6 618.7 136.79
+removeLiquidity 3 475.52 530.02
+removeLiquidity 1 101.51 885.91
+removeLiquidity 1 715.95 705.02
+swapEthToDai 6 508.66
+swapDaiToEth 2 991.03
+addLiquidity 8 62.52 15.79
+swapDaiToEth 1 733.38
+removeLiquidity 6 197.77 556.68
+swapDaiToEth 8 591.45
+addLiquidity 2 410.53 495.43
+swapDaiToEth 2 179.17
+addLiquidity 4 30.75 29.15
+addLiquidity 6 512.32 594.31
+swapEthToDai 0 875.91
+addLiquidity 7 982.71 870.2
+removeLiquidity 8 618.5 757.63
+removeLiquidity 2 490.21 863.59
+swapEthToDai 7 743.07
+removeLiquidity 3 964.16 214.19
+removeLiquidity 4 13.18 451.43
+swapEthToDai 7 853.72
+removeLiquidity 4 850.02 752.78
+removeLiquidity 4 859.93 896.83
+addLiquidity 4 755.13 594.62
+removeLiquidity 0 592.3 103.89
+addLiquidity 4 813.14 581.5
+swapDaiToEth 1 92.39
+swapEthToDai 3 372.72
+swapEthToDai 6 507.45
+swapDaiToEth 7 138.59
+swapDaiToEth 4 128.24
+swapEthToDai 0 333.61
+addLiquidity 7 208.2 752.82
+removeLiquidity 0 394.84 106.41
+swapDaiToEth 4 421.11
+removeLiquidity 9 145.98 975.37
+removeLiquidity 7 979.44 691.82
+removeLiquidity 4 51.4 396.55
+removeLiquidity 5 1.7 691.85
+swapDaiToEth 3 671.64
+swapEthToDai 2 743.07
+swapEthToDai 2 144.21
+removeLiquidity 8 257.69 651.11
+addLiquidity 9 401.41 799.03
+swapDaiToEth 4 901.92
+swapDaiToEth 2 54.55
+removeLiquidity 8 691.88 325.75
+removeLiquidity 1 148.2 608.25
+swapDaiToEth 8 891.46
+swapDaiToEth 3 79.6
+swapDaiToEth 0 155.29
+swapEthToDai 6 905.87
+swapDaiToEth 9 604.12
+removeLiquidity 1 894.71 965.43
+swapEthToDai 9 576.57
+swapEthToDai 7 244.04
+swapDaiToEth 6 459.35
+swapEthToDai 0 368.38
+removeLiquidity 1 107.4 225.99
+swapDaiToEth 5 352.13
+addLiquidity 3 341.41 757.65
+removeLiquidity 3 200.76 664.63
+swapDaiToEth 8 931.29
+removeLiquidity 0 676.84 956.59
+removeLiquidity 9 393.33 177.74
+swapDaiToEth 8 542.29
+removeLiquidity 2 189.3 174.91
+removeLiquidity 6 956.73 206.54
+swapEthToDai 6 164.05
+swapDaiToEth 0 180.1
+addLiquidity 7 500.17 257.28
+addLiquidity 1 301.66 152.04
+addLiquidity 7 954.2 609.61
+swapEthToDai 9 999.0
+removeLiquidity 2 808.25 291.25
+addLiquidity 0 699.46 792.89
+swapEthToDai 5 946.4
+removeLiquidity 3 300.69 215.16
+removeLiquidity 9 291.5 190.45
+swapDaiToEth 4 22.96
+addLiquidity 8 494.31 697.84
+swapDaiToEth 5 543.41
+swapEthToDai 5 745.06
+swapDaiToEth 1 32.26
+addLiquidity 7 243.0 954.26
+swapEthToDai 1 774.93
+swapEthToDai 2 792.28
+removeLiquidity 3 262.34 600.75
+removeLiquidity 7 918.52 282.36
+addLiquidity 4 999.69 286.03
+swapDaiToEth 0 102.1
+addLiquidity 2 23.9 112.41
+swapEthToDai 9 595.4
+addLiquidity 4 33.58 797.78
+addLiquidity 2 94.85 896.01
+removeLiquidity 2 601.99 83.99
+swapEthToDai 7 236.67
+removeLiquidity 5 854.25 428.12
+swapDaiToEth 0 193.5
+swapDaiToEth 4 846.33
+addLiquidity 8 199.84 631.54
+swapEthToDai 7 114.89
+removeLiquidity 5 827.1 131.43
+swapDaiToEth 9 44.67
+removeLiquidity 6 716.07 720.18
+removeLiquidity 9 935.73 16.58
+addLiquidity 9 645.28 890.68
+removeLiquidity 8 167.38 773.89
+removeLiquidity 7 770.88 525.84
+swapEthToDai 1 698.58
+swapEthToDai 5 120.67
+removeLiquidity 8 602.87 889.48
+swapDaiToEth 7 43.31
+swapDaiToEth 0 565.69
+addLiquidity 0 324.66 507.82
+addLiquidity 9 592.51 712.53
+swapEthToDai 8 60.35
+swapDaiToEth 9 813.44
+removeLiquidity 0 379.55 829.75
+addLiquidity 6 973.1 708.0
+swapEthToDai 9 969.84
+swapDaiToEth 1 559.72
+addLiquidity 8 645.01 933.91
+swapEthToDai 9 674.6
+removeLiquidity 3 477.01 293.55
+swapEthToDai 1 8.77
+removeLiquidity 2 258.04 909.17
+removeLiquidity 8 78.37 720.66
+swapDaiToEth 7 829.24
+swapDaiToEth 6 882.24
+removeLiquidity 3 847.41 213.42
+swapEthToDai 3 638.32
+removeLiquidity 1 429.7 494.04
+addLiquidity 0 532.47 844.46
+addLiquidity 6 122.48 409.06
+swapEthToDai 8 439.92
+swapDaiToEth 6 591.31
+swapDaiToEth 1 512.08
+swapDaiToEth 1 268.2
+swapEthToDai 2 279.1
+swapDaiToEth 9 383.19
+addLiquidity 7 463.16 456.31
+swapEthToDai 7 222.48
+removeLiquidity 3 860.85 853.7
+swapEthToDai 4 249.36
+addLiquidity 7 629.13 225.47
+swapDaiToEth 9 309.09
+removeLiquidity 0 295.83 453.16
+addLiquidity 8 201.79 52.92
+swapDaiToEth 3 918.43
+removeLiquidity 3 969.81 516.94
+addLiquidity 8 225.1 452.17
+removeLiquidity 7 922.47 721.93
+swapEthToDai 6 876.77
+removeLiquidity 1 455.98 126.59
+addLiquidity 1 270.8 182.86
+swapEthToDai 0 442.73
+swapEthToDai 1 887.6
+addLiquidity 5 567.82 876.91
+removeLiquidity 8 987.08 936.6
+swapEthToDai 9 975.96
+addLiquidity 0 667.26 458.14
+addLiquidity 4 695.97 70.55
+swapDaiToEth 2 222.61
+addLiquidity 2 646.43 269.76
+swapDaiToEth 4 548.95
+addLiquidity 4 845.67 820.2
+swapDaiToEth 5 596.46
+removeLiquidity 5 864.75 462.76
+addLiquidity 6 580.29 727.68
+swapDaiToEth 7 13.69
+removeLiquidity 5 325.16 470.65
+swapEthToDai 7 404.52
+removeLiquidity 7 609.09 506.31
+removeLiquidity 1 376.97 92.87
+addLiquidity 6 822.31 430.72
+addLiquidity 0 597.39 544.71
+removeLiquidity 0 256.86 622.07
+addLiquidity 2 197.45 372.48
+swapDaiToEth 8 623.49
+swapEthToDai 9 24.78
+addLiquidity 2 732.89 487.65
+removeLiquidity 4 463.1 404.32
+swapDaiToEth 0 455.82
+addLiquidity 0 360.31 706.88
+removeLiquidity 9 34.3 89.53
+swapEthToDai 4 947.55
+swapDaiToEth 1 369.81
+removeLiquidity 2 786.13 347.1
+addLiquidity 6 812.45 912.73
+swapDaiToEth 3 918.3
+addLiquidity 1 613.12 808.67
+removeLiquidity 3 461.79 525.63
+removeLiquidity 6 387.63 927.85
+swapEthToDai 2 956.96
+swapEthToDai 5 489.86
+addLiquidity 8 517.84 623.8
+removeLiquidity 2 265.58 325.43
+swapEthToDai 0 137.89
+removeLiquidity 1 822.8 255.3
+addLiquidity 4 499.37 854.7
+addLiquidity 5 550.42 252.35
+removeLiquidity 4 897.66 742.07
+removeLiquidity 2 236.49 883.25
+addLiquidity 9 210.62 954.93
+swapDaiToEth 5 774.0
+swapEthToDai 2 614.53
+addLiquidity 1 26.66 675.5
+removeLiquidity 3 30.71 487.54
+removeLiquidity 6 933.94 2.37
+swapEthToDai 2 263.62
+removeLiquidity 1 378.98 139.26
+swapDaiToEth 2 336.68
+swapDaiToEth 5 93.36
+swapEthToDai 3 522.12
+swapDaiToEth 9 222.18
+swapDaiToEth 9 473.54
+addLiquidity 0 494.79 435.13
+removeLiquidity 5 71.84 465.94
+addLiquidity 1 602.14 982.17
+removeLiquidity 3 217.67 558.29
+swapDaiToEth 7 236.3
+swapDaiToEth 0 78.54
+addLiquidity 4 714.07 374.65
+swapDaiToEth 6 571.55
+swapDaiToEth 6 734.48
+swapDaiToEth 5 618.2
+removeLiquidity 2 302.75 724.0
+addLiquidity 5 90.19 882.93
+addLiquidity 2 864.3 330.35
+removeLiquidity 7 146.81 902.03
+swapDaiToEth 2 562.73
+swapDaiToEth 8 992.57
+swapDaiToEth 8 186.97
+swapEthToDai 5 637.54
+removeLiquidity 1 340.6 388.02
+removeLiquidity 6 10.94 825.76
+addLiquidity 4 935.84 244.39
+swapDaiToEth 0 29.65
+addLiquidity 9 834.73 397.67
+addLiquidity 8 220.17 425.15
+removeLiquidity 1 703.45 401.43
+removeLiquidity 5 358.25 757.32
+swapEthToDai 1 680.2
+swapEthToDai 9 226.52
+addLiquidity 5 634.87 741.49
+swapDaiToEth 7 239.16
+addLiquidity 4 917.67 79.75
+swapEthToDai 6 589.88
+swapDaiToEth 7 68.38
+addLiquidity 9 445.54 746.13
+swapEthToDai 4 637.38
+removeLiquidity 8 526.15 362.7
+removeLiquidity 2 469.0 946.36
+swapEthToDai 6 397.74
+removeLiquidity 9 694.47 301.14
+addLiquidity 7 456.46 775.65
+removeLiquidity 5 253.33 702.4
+swapEthToDai 2 13.33
+swapEthToDai 0 733.24
+removeLiquidity 7 460.28 930.57
+swapDaiToEth 0 320.6
+addLiquidity 9 130.01 62.96
+swapDaiToEth 6 745.66
+addLiquidity 1 941.47 157.08
+removeLiquidity 4 170.81 526.38
+swapDaiToEth 0 697.66
+removeLiquidity 9 430.3 195.39
+addLiquidity 2 121.8 350.96
+swapEthToDai 8 487.95
+swapDaiToEth 6 520.2
+swapDaiToEth 4 773.3
+swapDaiToEth 0 539.61
+addLiquidity 7 106.67 829.27
+addLiquidity 0 947.82 261.66
+removeLiquidity 7 122.76 867.81
+addLiquidity 8 745.23 122.26
+swapEthToDai 1 30.03
+removeLiquidity 9 979.28 49.92
+swapEthToDai 0 545.88
+swapDaiToEth 1 974.51
+swapDaiToEth 0 578.02
+swapEthToDai 9 344.57
+swapDaiToEth 3 384.39
+swapEthToDai 6 434.77
+removeLiquidity 3 18.64 459.51
+removeLiquidity 0 523.62 137.54
+removeLiquidity 0 110.26 907.55
+swapEthToDai 1 994.58
+removeLiquidity 4 411.04 446.16
+addLiquidity 1 631.57 818.49
+removeLiquidity 8 257.26 418.97
+removeLiquidity 6 352.74 460.1
+swapEthToDai 3 437.26
+swapEthToDai 0 489.33
+swapDaiToEth 6 427.59
+removeLiquidity 8 597.53 973.15
+removeLiquidity 4 370.14 775.2
+removeLiquidity 6 426.72 250.15
+swapEthToDai 8 756.34
+removeLiquidity 9 654.95 906.12
+removeLiquidity 4 380.5 121.45
+swapEthToDai 1 348.71
+addLiquidity 5 65.58 415.62
+swapEthToDai 4 38.53
+swapEthToDai 9 343.08
+swapDaiToEth 2 759.66
+addLiquidity 2 783.23 601.76
+swapDaiToEth 3 778.2
+removeLiquidity 0 389.47 627.53
+removeLiquidity 8 231.91 81.92
+swapEthToDai 0 207.33
+swapEthToDai 4 702.76
+swapEthToDai 8 918.1
+removeLiquidity 0 586.83 683.04
+swapEthToDai 0 262.28
+addLiquidity 8 664.43 666.45
+swapDaiToEth 4 268.79
+swapDaiToEth 9 407.29
+removeLiquidity 1 104.13 820.45
+removeLiquidity 1 622.86 260.15
+swapDaiToEth 2 321.96
+removeLiquidity 7 800.39 523.7
+swapEthToDai 0 475.78
+swapDaiToEth 6 623.24
+swapEthToDai 1 164.34
+swapDaiToEth 8 492.74
+swapEthToDai 5 402.43
+swapDaiToEth 6 597.17
+removeLiquidity 7 890.24 447.12
+addLiquidity 2 513.46 740.63
+removeLiquidity 6 153.98 746.64
+addLiquidity 4 271.93 151.97
+swapDaiToEth 1 922.21
+swapDaiToEth 2 335.53
+removeLiquidity 5 206.67 37.11
+removeLiquidity 7 84.92 633.15
+addLiquidity 3 867.34 170.9
+swapEthToDai 0 45.49
+removeLiquidity 4 48.4 579.24
+removeLiquidity 1 771.14 425.67
+swapEthToDai 6 94.17
+swapEthToDai 4 235.9
+addLiquidity 1 138.22 833.72
+addLiquidity 0 914.38 256.72
+removeLiquidity 2 811.43 43.84
+swapDaiToEth 1 293.14
+swapEthToDai 7 886.88
+removeLiquidity 0 163.51 268.22
+addLiquidity 0 778.88 210.44
+removeLiquidity 7 212.56 109.54
+swapDaiToEth 0 872.21
+swapDaiToEth 5 665.6
+swapDaiToEth 7 717.3
+addLiquidity 7 569.75 231.87
+removeLiquidity 6 467.18 557.62
+addLiquidity 2 190.24 176.47
+removeLiquidity 6 63.79 788.65
+addLiquidity 9 586.74 844.66
+addLiquidity 9 754.61 653.87
+removeLiquidity 1 29.17 641.01
+removeLiquidity 7 85.04 307.36
+addLiquidity 5 486.79 883.68
+addLiquidity 8 985.1 161.96
+swapDaiToEth 8 498.3
+swapEthToDai 6 308.78
+addLiquidity 1 587.24 291.98
+addLiquidity 1 371.36 217.76
+removeLiquidity 9 765.12 17.68
+swapDaiToEth 8 793.77
+addLiquidity 1 686.46 8.83
+addLiquidity 2 56.36 160.13
+swapEthToDai 8 551.24
+removeLiquidity 1 864.24 735.04
+removeLiquidity 9 63.93 531.66
+addLiquidity 4 714.78 649.88
+addLiquidity 2 341.85 942.53
+addLiquidity 5 402.87 914.74
+swapEthToDai 3 250.81
+swapEthToDai 6 304.82
+removeLiquidity 7 298.89 112.28
+swapDaiToEth 8 820.51
+swapEthToDai 4 205.4
+swapEthToDai 4 402.31
+addLiquidity 2 196.71 106.19
+addLiquidity 7 905.54 608.26
+swapDaiToEth 5 661.65
+addLiquidity 9 173.42 514.49
+swapDaiToEth 3 812.8
+swapEthToDai 1 451.37
+swapEthToDai 1 132.52
+addLiquidity 5 88.66 318.64
+swapDaiToEth 2 678.16
+addLiquidity 3 511.51 14.19
+swapEthToDai 9 28.22
+swapEthToDai 0 623.31
+swapDaiToEth 7 245.63
+addLiquidity 3 857.27 353.39
+swapDaiToEth 3 636.47
+removeLiquidity 5 878.51 643.24
+addLiquidity 1 758.46 936.59
+swapDaiToEth 1 902.08
+swapEthToDai 0 905.44
+swapEthToDai 9 142.11
+removeLiquidity 2 27.8 422.77
+removeLiquidity 1 132.04 109.87
+swapEthToDai 9 201.24
+addLiquidity 8 682.56 504.12
+swapEthToDai 0 903.82
+swapEthToDai 4 856.54
+addLiquidity 3 968.76 625.55
+swapDaiToEth 1 833.02
+removeLiquidity 3 809.14 328.96
+swapDaiToEth 1 519.26
+swapEthToDai 5 733.21
+swapDaiToEth 5 873.7
+swapEthToDai 7 288.76
+removeLiquidity 2 698.04 50.52
+swapDaiToEth 4 433.7
+swapDaiToEth 6 451.24
+swapEthToDai 9 947.44
+swapDaiToEth 9 211.83
+swapEthToDai 6 3.62
+swapEthToDai 8 619.11
+swapEthToDai 1 441.28
+swapEthToDai 5 450.02
+swapDaiToEth 3 996.76
+addLiquidity 7 348.83 429.07
+removeLiquidity 4 898.2 608.14
+removeLiquidity 4 37.48 715.74
+addLiquidity 1 975.09 389.12
+swapEthToDai 1 240.09

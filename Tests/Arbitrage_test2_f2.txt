@@ -1,0 +1,8 @@
+addPool 20000 40000
+addPool 30000 60000
+Sleep 1000
+addLiquidity 2 10000 20000
+addLiquidity 3 8000 16000
+removeLiquidity 2 5000 10000
+removeLiquidity 3 4000 8000
+calculateArbitrage 2 3

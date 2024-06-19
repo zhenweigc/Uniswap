@@ -132,10 +132,21 @@ void Trade_Processor::processFile(const std::string& filepath) {
                 		continue;
             		}
             		
-			uint64_t poolId = std::stoull(tokens[1]);
-            		double amount1 = std::stod(tokens[2]);
-            		double amount2 = tokens.size() > 3 ? std::stod(tokens[3]) : 0.0;
+			uint64_t poolId;
+    			double amount1, amount2;
 
+    			try {
+        			poolId = std::stoull(tokens[1]);
+        			amount1 = std::stod(tokens[2]);
+        			amount2 = tokens.size() > 3 ? std::stod(tokens[3]) : 0.0;
+    			} catch (const std::invalid_argument& e) {
+        			log("Invalid argument in line: " + line);
+        			continue;
+    			} catch (const std::out_of_range& e) {
+        			log("Out of range value in line: " + line);
+        			continue;
+    			}
+			
             		auto pool = poolManager->getPool(poolId).lock();
             		if (!pool) {
 				log("Invalid pool ID: " + std::to_string(poolId));

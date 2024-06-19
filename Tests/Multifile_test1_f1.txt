@@ -1,0 +1,6 @@
+addPool 1000 500
+Sleep 1000
+addLiquidity 0 200 100
+swapDaiToEth 0 50
+removeLiquidity 0 100 50
+calculateArbitrage 0 1
