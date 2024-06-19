@@ -4,10 +4,11 @@
 #include <mutex>
 
 class LiquidityPool {
-protected:
+private:
     double dai;    
     double eth;
 
+protected:
     void addDai(double amount);
     void addEth(double amount);
     void removeDai(double amount);
